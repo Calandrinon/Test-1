@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CS styles -->
+    <link rel="stylesheet" href="/CSS/menu.css" />
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="/CSS/acordeon.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- NAVIGARE -->
+    <header class="container-2">
+      <nav id="menu" role="navigation">
+        <!--         <div class="brand">&Aopf;</div>             -->
+                <ul>
+                    <li><a href="#eligibilitate">Eligibilitate</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                </ul>
+            </nav>
+            <div class="page-wrap">
+                
+            <button id="menu-toggle">
+              <span class="menu-text">MENU</span> <!-- Textul va fi actualizat -->
+            <span class="menu-icon"></span>
+            
+        </button>
+    </header>
+
+    <!-- HERO SUN 2024 -->
+    <div class="container">
+      <div>
+        <h1>SUN 2024</h1>
+        <p>Start UP</p> 
+      </div>
+    </div>
+<!-- PROOF / STATISTICI -->
+    <div class="container">
+      <div class="div-flex" id="statistics">
+        <div><span class="proof accent" ><span id="visit-count"></span>+</span><p>vizite<br>website</p></div>
+        <div><span class="proof accent" ><span id="total-checks"></span>+</span><p>interogări<br>eligibilitate</p></div>
+        <div><span class="proof accent" ><span id="pilon1-count"></span>+</span><p>eligibili<br>PILONUL 1</p></div>
+        <div><span class="proof accent" ><span id="pilon2-count"></span>+</span><p>eligibili<br>PILONUL 2</p></div>        
+      </div>
+      
+    </div>
+    <div class="container">
+      
+      <!-- <div class="accordion"></div>
+        <div class="tab">
+            <button class="accordion-btn">
+                <h2>Pilonul 1</h2> <span class="icon">+</span>
+            </button>
+            <div class="content">
+                <p>Grupul-țintă eligibil al Pilonului I - Activarea potențialului antreprenorial al tinerilor este format din tineri cu vârsta între 18 ani și până în 30 de ani neîmpliniți la momentul publicării, 8 August 2024, în MO al procedurii de implementare <a href="https://legislatie.just.ro/public/DetaliiDocument/287373">„START UP NATION - ROMÂNIA“ ediția 2024</a>, indiferent de statutul pe piața muncii, inclusiv persoană reîntoarsă în țară.</p><br><br>
+                <p>Bugetul pentru pilonul I este de 295.750.000,00 euro, din care:<br>
+                  a) pentru regiunile mai puțin dezvoltate - 266.000.000,00 euro;<br>
+                  b) pentru regiunea mai dezvoltată (București-Ilfov) - 29.750.000,00 euro.
+                  </p>
+
+            </div>
+        </div>
+        
+      </div> -->
+    </div>
+    <!-- ELIGIBILITATE -->
+    <div class="container">      
+      <div class="div-1">
+        <h2 class="p-l-10 accent-text" id="eligibilitate">ELIGIBILITATE</h2>
+        <!-- FORM ELIGIBILITATE -->
+        <form>
+          <!-- ELIGIBILITATE -->
+           
+          <fieldset>
+            <!-- <legend>Formular eligibilitate</legend> -->
+            <!-- Varsta -->
+            <div>
+              <label for="varsta"><strong>Vârsta</strong> (ani - la 8 August 2024):<label>
+              <input
+                type="number"
+                maxlength="99"
+                id="varsta"
+                style="width: 40px"
+              />
+              Ani
+            </div>
+
+            <!-- Domiciliu -->
+            <div class="m-t-20">
+              <label><strong>DOMICILIU</strong></label>
+              <div class="radio-button-container">
+                <button type="button" id="bucurestiIlfov" name="domiciliu" class="radio-button" data-value="20">
+                  București-Ilfov
+                </button>
+                <button type="button" id="restulTarii" name="domiciliu" class="radio-button" data-value="15">
+                  Restul Țării
+                </button>
+              </div>
+            </div>
+
+            <!-- Mediu Urban Rural -->
+            <div class="m-t-20">
+              <label><strong>MEDIU</strong></label>
+              <div class="radio-button-container">
+                <button type="button" id="urban" name="mediu" class="radio-button" data-value="33">
+                  Urban
+                </button>
+                <button type="button" id="rural" name="mediu" class="radio-button" data-value="32">
+                  Rural
+                </button>
+              </div>          
+            </div>
+            <!-- Asociat -->
+            <div class="m-t-20">
+              <label><strong>ALTE SOCIETĂȚI</strong></label><br>
+              
+              <div class="accent-slab"><span>Dețineți, sau sunteți asociat/acționar în alte socități?</span></div>
+              <div class="radio-button-container">
+                <button type="button" id="asociatDa" name="asociat" class="radio-button" data-value="DA">
+                  DA
+                </button>
+                <button type="button" id="asociatNu" name="asociat" class="radio-button" data-value="NU">
+                  NU
+                </button>
+              </div>
+            </div>
+            <!-- Grup Țintă -->
+            <div class="m-t-20">
+              <label><strong>GRUP ȚINTĂ</strong></label><br>
+              <div class="accent-slab"><span>Selectați descrierile care vă caracterizează. Se pot selecta mai multe caracteristici.</span></div>
+              
+              <div class="checkbox-button-container">
+                <button type="button" id="grupTintaB" name="grupTinta" class="checkbox-button" data-value="DA">
+                  b) Persoană în căutarea unui loc de muncă
+                </button>
+                <button type="button" id="grupTintaC" name="grupTinta" class="checkbox-button" data-value="DA">
+                  c) Șomer
+                </button>
+                
+                <button type="button" id="grupTintaD" name="grupTinta" class="checkbox-button" data-value="DA">
+                  d) Șomer de lungă durată
+                </button>
+                <button type="button" id="grupTintaE" name="grupTinta" class="checkbox-button" data-value="DA">
+                  e) Persoană inactivă
+                </button>
+                <button type="button" id="grupTintaG" name="grupTinta" class="checkbox-button" data-value="DA"> g) Persoană reîntoarsă în țară</button>
+                <p>f) Persoană din grupurile dezavantajate pe piața muncii:</p>
+                <button type="button" id="grupTintaF1" name="grupTinta" class="checkbox-button" data-value="DA"> f) 1. Persoană cu nivel scăzut de instruire</button>
+                <button type="button" id="grupTintaF2" name="grupTinta" class="checkbox-button" data-value="DA"> f) 2. Persoană cu dizabilități</button>
+                <button type="button" id="grupTintaF3" name="grupTinta" class="checkbox-button" data-value="DA"> f) 3. Persoană din comunitățile supuse riscului de excluziune socială</button>
+                <button type="button" id="grupTintaF4" name="grupTinta" class="checkbox-button" data-value="DA"> f) 4. Persoană din zonele rurale</button>
+                <button type="button" id="grupTintaF5" name="grupTinta" class="checkbox-button" data-value="DA"> f) 5. Persoană eliberată din detenție</button>
+                <button type="button" id="grupTintaF6" name="grupTinta" class="checkbox-button" data-value="DA"> f) 6. Tânăr postinstituționalizat</button>
+                
+              </div>
+            </div>
+          </fieldset>
+          
+        </form>
+      </div>
+      <!-- STATUS ELIGIBILITATE -->
+      <div class="div-2">
+        
+        <div class="status">
+          <span class="p-l-10">STATUS</span><br>
+          <span class="proof accent accent-2" id="eligibility-status">N/A</span><br>
+          <span class="p-l-10">PILON</span><br>
+          <span class="proof accent accent-2" id="eligibility-pilon">N/A</span>          
+          
+        </div>
+        <div id="pilon1-text" class="pilon-text">
+          <p>Sunteți eligibil în cadrul <strong class="accent-text">Pilonului 1 - Activarea potențialului antreprenorial al tinerilor</strong>.</p>
+          <p>BUGET<br>
+            <strong class="accent-text accent-slab">295.750.000,00 euro</strong>
+            <br>
+            <strong class="accent-text">5.915 proiecte</strong>
+          </p>
+
+          <p>Regiuni mai puțin dezvoltate<br>
+            <strong class="accent-text accent-slab">266.000.000,00 euro</strong>
+            <br>
+            <strong class="accent-text">5.320 proiecte</strong>
+          </p>
+
+
+          <p>București - Ilfov<br>
+            <strong class="accent-text accent-slab">29.750.000,00 euro</strong>
+            <br>
+            <strong class="accent-text">595 proiecte</strong>
+          </p>
+          
+          
+        </div>
+        <div id="pilon2-text" class="pilon-text">
+          <p>Sunteți eligibil în cadrul <strong class="accent-text">Pilonului 2 - Sprijin pentru dezvoltarea antreprenoriatului în rândul persoanelor din grupul-țintă</strong>.</p>
+          <p>BUGET<br>
+            <strong class="accent-text accent-slab">150.435.295,00 euro</strong>
+            <br>
+            <strong class="accent-text">3.008 proiecte</strong>
+          </p>
+
+          <p>Regiuni mai puțin dezvoltate<br>
+            <strong class="accent-text accent-slab">150.435.295,00 euro</strong>
+            <br>
+            <strong class="accent-text">3.008 proiecte</strong>
+          </p>
+          <p>București - Ilfov<br>
+            <strong class="accent-text accent-slab">0,00 euro</strong>
+            <br>
+            <strong class="accent-text">0 proiecte</strong>
+          </p>
+        </div>
+        <!-- <div id="statistics">
+          <p id="total-checks">Total Checks: 0</p>
+          <p id="pilon1-count">Eligibili pentru Pilonul 1: 0</p>
+          <p id="pilon2-count">Eligibili pentru Pilonul 2: 0</p>
+          <p id="visit-count">Vizite pe site: 0</p>
+        </div> -->
+      </div>            
+    </div>
+    <!-- FINANTARE -->
+    <div class="container">
+      <div class="m-t-30">
+        <h2 class="p-l-10 accent-text" id="eligibilitate">FINANȚARE</h2>
+
+      </div>
+    </div>
+
+
+    <!-- JS scripts -->
+    <script type="module" src="/JS/script.js"></script>
+    <script type="module" src="/JS/menu.js"></script>
+    <script type="module" src="/JS/butoaneradio.js"></script>
+    <script type="module" src="/JS/eligibilitate.js"></script>
+    <script type="module" src="/JS/statistics.js"></script>
+    <script type="module" src="/JS/acordeon.js"></script>
+    
+  </body>
+</html>

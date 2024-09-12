@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CS styles -->
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="/CSS/acordeon.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h1>SUN 2024</h1>
+      <p>Start UP</p>
+      <!-- <div class="accordion"></div>
+        <div class="tab">
+            <button class="accordion-btn">
+                <h2>Pilonul 1</h2> <span class="icon">+</span>
+            </button>
+            <div class="content">
+                <p>Grupul-țintă eligibil al Pilonului I - Activarea potențialului antreprenorial al tinerilor este format din tineri cu vârsta între 18 ani și până în 30 de ani neîmpliniți la momentul publicării, 8 August 2024, în MO al procedurii de implementare <a href="https://legislatie.just.ro/public/DetaliiDocument/287373">„START UP NATION - ROMÂNIA“ ediția 2024</a>, indiferent de statutul pe piața muncii, inclusiv persoană reîntoarsă în țară.</p><br><br>
+                <p>Bugetul pentru pilonul I este de 295.750.000,00 euro, din care:<br>
+                  a) pentru regiunile mai puțin dezvoltate - 266.000.000,00 euro;<br>
+                  b) pentru regiunea mai dezvoltată (București-Ilfov) - 29.750.000,00 euro.
+                  </p>
+
+            </div>
+        </div>
+        
+      </div> -->
+    </div>
+    <form>
+      <!-- ELIGIBILITATE -->
+      <fieldset>
+        <legend>Eligibilitate</legend>
+        <!-- Varsta -->
+        <div>
+          <label for="varsta"><strong>Vârsta</strong> (ani - la 8 August 2024):<label>
+          <input
+            type="number"
+            maxlength="99"
+            id="varsta"
+            style="width: 40px"
+          />
+          Ani
+        </div>
+
+        <!-- Domiciliu -->
+        <div class="m-t-10">
+          <label><strong>Domiciliu</strong></label>
+          <div class="radio-button-container">
+            <button type="button" id="bucurestiIlfov" name="domiciliu" class="radio-button" data-value="20">
+              București-Ilfov
+            </button>
+            <button type="button" id="restulTarii" name="domiciliu" class="radio-button" data-value="15">
+              Restul Țării
+            </button>
+          </div>
+        </div>
+
+        <!-- Mediu Urban Rural -->
+        <div class="m-t-10">
+          <label><strong>MEDIU</strong></label>
+          <div class="radio-button-container">
+            <button type="button" id="urban" name="mediu" class="radio-button" data-value="33">
+              Urban
+            </button>
+            <button type="button" id="rural" name="mediu" class="radio-button" data-value="32">
+              Rural
+            </button>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+
+        <div class="m-t-10">         
+
+          <!-- Varsta -->
+          <div>
+            <label for="varsta"><strong>Vârsta</strong> (ani - la 8 August 2024):<label>
+            <input
+              type="number"
+              maxlength="99"
+              id="varsta"
+              style="width: 40px"
+            />
+            Ani
+          </div>
+
+          <!-- Domiciliu -->
+          <div class="m-t-10">
+            <label><strong>Domiciliu</strong></label>
+            <div class="radio-button-container">
+              <button type="button" id="bucurestiIlfov" name="domiciliu" class="radio-button" data-value="20">
+                București-Ilfov
+              </button>
+              <button type="button" id="restulTarii" name="domiciliu" class="radio-button" data-value="15">
+                Restul Țării
+              </button>
+            </div>
+          </div>
+
+          <!-- Mediu Urban Rural -->
+          <div class="m-t-10">
+            <label><strong>MEDIU</strong></label>
+            <div class="radio-button-container">
+              <button type="button" id="urban" name="mediu" class="radio-button" data-value="20">
+                Urban
+              </button>
+              <button type="button" id="rural" name="mediu" class="radio-button" data-value="15">
+                Rural
+              </button>
+            </div>
+          </div>
+
+          <div class="m-t-20 radio-button-container">
+            <label>Domiciliu</label>
+            <div class="radio-container radio-button">
+              <input
+                type="radio"
+                id="bucurestiIlfov"
+                name="domiciliu"
+                value="20"
+              />
+              <label for="bucurestiIlfov">București-Ilfov</label>
+            </div>
+            <div class="radio-container radio-button">
+              <input
+                type="radio"
+                id="restulTarii"
+                name="domiciliu"
+                value="15"
+              />
+              <label for="restulTarii">Restul Țării</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contribuție (calculată automat) -->
+        <div>
+          <label for="contributionAmount">Contribuție (minim 10%): </label>
+          <span id="contributionAmount">0 lei</span>
+        </div>
+
+        <!-- Consultanță (maxim 10.000 lei) -->
+        <div>
+          <label for="consultingAmount">Consultanță (maxim 10.000 lei): </label>
+          <input type="text" id="consultingAmount" value="10000" />
+        </div>
+
+        <!-- Salarii (maxim 60.000 lei) -->
+        <div>
+          <label for="salariesAmount">Salarii (maxim 60.000 lei): </label>
+          <input type="text" id="salariesAmount" value="60000" />
+        </div>
+
+        <!-- Valoare totală eligibilă (calculată automat) -->
+        <div>
+          <label for="totalEligibleAmount">Valoare totală eligibilă: </label>
+          <span id="totalEligibleAmount">0 lei</span>
+        </div>
+
+        <!-- Valoare TVA (calculată automat) -->
+        <div>
+          <label for="vatAmount">Valoare TVA: </label>
+          <span id="vatAmount">0 lei</span>
+        </div>
+
+        <!-- Valoare TOTALĂ (+TVA) (calculată automat) -->
+        <div>
+          <label for="totalWithVatAmount">Valoare TOTALĂ (+TVA): </label>
+          <span id="totalWithVatAmount">0 lei</span>
+        </div>
+      </fieldset>
+      <!-- Finantare -->
+      <fieldset>
+        <legend>Finanțare</legend>
+
+        <!-- Finanțare dorită (max 250.000 lei) -->
+        <div>
+          <label for="fundingAmount">AFN (max 250.00 lei): </label>
+          <input type="text" id="fundingAmount" value="250000" />
+        </div>
+
+        <!-- Contribuție (calculată automat) -->
+        <div>
+          <label for="contributionAmount">Contribuție (minim 10%): </label>
+          <span id="contributionAmount">0 lei</span>
+        </div>
+
+        <!-- Consultanță (maxim 10.000 lei) -->
+        <div>
+          <label for="consultingAmount">Consultanță (maxim 10.000 lei): </label>
+          <input type="text" id="consultingAmount" value="10000" />
+        </div>
+
+        <!-- Salarii (maxim 60.000 lei) -->
+        <div>
+          <label for="salariesAmount">Salarii (maxim 60.000 lei): </label>
+          <input type="text" id="salariesAmount" value="60000" />
+        </div>
+
+        <!-- Valoare totală eligibilă (calculată automat) -->
+        <div>
+          <label for="totalEligibleAmount">Valoare totală eligibilă: </label>
+          <span id="totalEligibleAmount">0 lei</span>
+        </div>
+
+        <!-- Valoare TVA (calculată automat) -->
+        <div>
+          <label for="vatAmount">Valoare TVA: </label>
+          <span id="vatAmount">0 lei</span>
+        </div>
+
+        <!-- Valoare TOTALĂ (+TVA) (calculată automat) -->
+        <div>
+          <label for="totalWithVatAmount">Valoare TOTALĂ (+TVA): </label>
+          <span id="totalWithVatAmount">0 lei</span>
+        </div>
+      </fieldset>
+    </form>
+    
+    <!-- JS scripts -->
+    <script src="/JS/acordeon.js"></script>
+    <script src="/JS/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,386 @@
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 800
+
+.open-sans-<uniquifier > {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+body {
+  font-family: Open Sans;
+  font-size: 15px;
+  margin: 10px;
+  color: #4c516d;
+}
+
+/* Container */
+.container {
+  max-width: 1100px;
+  /* align-items: center; */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; /* Opțional, pentru a adăuga spațiu între div-uri */
+}
+
+.container-2 {
+  max-width: 1100px;
+  /* align-items: center; */
+  margin: 0 auto;
+  display: flex;
+  align: left;
+}
+
+.div-flex {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.div-flex > div {
+  flex-basis: 15%; /* Ajustează dimensiunea fiecărui div */
+  text-align: center;
+  color: #4c516d;
+  padding: 10px; /* Opțional, pentru spațiere internă */
+  margin: 0 10px; /* Spațiu între div-uri */
+}
+
+.div-1 {
+  width: 70%;
+}
+.div-2 {
+  width: 30%;
+
+  margin-left: 20px;
+  margin-top: 30px;
+  padding: 10px;
+}
+
+.status {
+  border-radius: 10px;
+  padding-top: 10px;
+  margin-top: 20px;
+  /* background-color: #0166fb; */
+}
+
+/* STATISTICI */
+.proof {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+legend {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+fieldset {
+  border: 2px solid sandybrown;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+input {
+  border: 2px solid #89cff0;
+  transition: 0.5s;
+  border-radius: 5px;
+  color: #002244;
+  margin-left: 5px;
+  padding: 2px;
+  font-family: Open Sans;
+  /* font-size: 16px; */
+}
+
+input:focus {
+  border: 2px solid #318ce7;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+/* Pentru input text, number, email, password etc. care au text */
+input[type="text"]:not(:placeholder-shown),
+input[type="number"]:not(:placeholder-shown),
+input[type="email"]:not(:placeholder-shown),
+input[type="password"]:not(:placeholder-shown),
+input[type="search"]:not(:placeholder-shown) {
+  /* Stiluri aplicate când inputul are text */
+  color: #002244;
+}
+
+/* Pentru input radio care este bifat */
+input[type="radio"]:checked {
+  /* Stiluri aplicate când radio este bifat */
+  color: #002244;
+}
+
+/* Pentru input checkbox care este bifat */
+input[type="checkbox"]:checked {
+  /* Stiluri aplicate când checkbox este bifat */
+  color: #002244;
+}
+
+/* Pentru inputurile selectate, cum ar fi select box */
+select:valid {
+  /* Stiluri aplicate când selectul are o opțiune selectată */
+  color: #002244;
+}
+
+/* Pentru textarea care are text */
+textarea:not(:placeholder-shown) {
+  /* Stiluri aplicate când textarea are text */
+  color: #002244;
+}
+
+/* span {
+  color: #002244;
+  background-color: #15f4ee;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+} */
+
+/* ......................................... */
+/* ...........ACCENTE...................... */
+/*..........................................  */
+
+.accent {
+  color: #002244;
+  background-color: #15f4ee;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+}
+
+.accent-2 {
+  font-size: 25px;
+}
+.accent-slab {
+  background-color: #15f4ee;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  margin-left: -5px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.accent-text {
+  color: #002244;
+}
+
+/* ......................................... */
+/* ...........PADDING...................... */
+/*..........................................  */
+
+.p-l-5 {
+  padding-left: 5px;
+}
+.p-l-10 {
+  padding-left: 10px;
+}
+.p-l-20 {
+  padding-left: 20px;
+}
+
+* ......................................... */
+/* ...........MARGIN...................... */
+/*..........................................  */
+.m-t-30 {
+  margin-top: 30px;
+}
+
+div {
+  padding-top: 5px;
+}
+label {
+  color: #4c516d;
+}
+
+/*...Ascunde rotița de la imput number.................. */
+/*...Crome.................. */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/*...Mozila.................. */
+input {
+  -moz-appearance: textfield;
+}
+
+/*...Div margins.................. */
+.m-t-20 {
+  margin-top: 20px;
+}
+.m-t-10 {
+  margin-top: 10px;
+}
+
+/*BUTON radio*/
+.radio-button-container {
+  display: flex; /* Modificăm afișarea containerului la flex pentru a alinia elementele inline */
+  gap: 10px; /* Adăugăm un spațiu între butoane (opțional) */
+}
+
+/* Stilul butonului radio */
+.radio-button {
+  display: inline-flex; /* Modificăm la inline-flex pentru a sta unul lângă altul */
+  align-items: center;
+  margin-top: 5px;
+  padding: 5px 10px;
+  border: 1px solid #89cff0;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  position: relative;
+  padding-left: 35px;
+  font-family: Open Sans;
+  font-size: 14px;
+  color: #4c516d;
+  font-weight: 600;
+}
+
+.radio-button.selected {
+  background-color: #eff5f7;
+  border: 2px solid #467ff7;
+  color: #002244;
+  font-weight: 600;
+}
+
+.radio-button::before {
+  content: "";
+  position: absolute;
+  box-shadow: 0 0 0 1px #89cff0;
+  top: 50%;
+  left: 9px;
+  transform: translateY(-50%);
+  width: 9px;
+  height: 9px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.radio-button.selected::before {
+  background-color: #467ff7;
+  box-shadow: 0 0 0 2px #467ff7;
+}
+
+/* Container pentru butoanele checkbox */
+.checkbox-button-container {
+  display: flex; /* Păstrăm flex pentru a alinia butoanele */
+  gap: 10px; /* Spațiu între butoane */
+}
+
+/* Container pentru butoanele checkbox */
+.checkbox-button-container {
+  display: flex;
+  flex-direction: column; /* Modificăm flex-ul pentru a alinia butoanele pe verticală */
+  gap: 10px; /* Spațiu între butoane */
+}
+
+/* Container pentru butoanele checkbox */
+.checkbox-button-container {
+  display: flex;
+  flex-direction: column; /* Aranjare verticală */
+  gap: 10px; /* Spațiu între butoane */
+}
+
+/* Stilul pentru butoanele checkbox */
+.checkbox-button {
+  display: inline-flex;
+  align-items: center;
+  /* margin-top: 5px; */
+  padding: 5px 10px;
+  border: 1px solid #89cff0;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  position: relative;
+  /* padding-left: 35px; */
+  font-family: Open Sans;
+  font-size: 14px;
+  color: #4c516d;
+  font-weight: 600;
+  width: auto; /* Lățimea este doar cât e necesar */
+  max-width: fit-content;
+}
+
+.checkbox-button.selected {
+  background-color: #eff5f7;
+  border: 2px solid #467ff7;
+  color: #002244;
+  font-weight: 600;
+}
+
+/* .checkbox-button::before {
+  content: "";
+  position: absolute;
+  box-shadow: 0 0 0 2px #89cff0;
+  top: 50%;
+  left: 9px;
+  transform: translateY(-50%);
+  width: 9px;
+  height: 9px;
+  border: 2px solid #ffffff;
+  border-radius: 3px;
+  background-color: #fff;
+} */
+
+/* .checkbox-button.selected::before {
+  background-color: #467ff7;
+  box-shadow: 0 0 0 2px #467ff7;
+  width: 10px;
+  height: 10px;
+} */
+
+/* Stiluri divuri ascunse pilonul 1 si 2 */
+.pilon-text {
+  display: none; /* Ascunde inițial ambele div-uri */
+}
+
+/* Stiluri pentru textul fiecărui pilon, dacă dorești stiluri specifice */
+#pilon1-text {
+  /* Stiluri specifice pentru textul Pilonului 1 */
+}
+
+#pilon2-text {
+  /* Stiluri specifice pentru textul Pilonului 2 */
+}
+
+/* Stiluri pentru mobil */
+@media (max-width: 730px) {
+  .container {
+    display: block; /* Aranjează div-urile unul sub altul pe mobil */
+  }
+
+  .div-1,
+  .div-2 {
+    width: 100%; /* Fiecare div va ocupa întreaga lățime a containerului */
+    margin: 0; /* Îndepărtează marginea între div-uri dacă este necesar */
+  }
+  .div-flex > div {
+    flex-basis: 20%; /* 48% pentru a permite spațiu între div-uri */
+    margin: 0 0 10px 0; /* Spațiu între rânduri */
+  }
+}
+
+/* Stiluri pentru mobil PROOF */
+@media (max-width: 600px) {
+  .div-flex > div {
+    flex-basis: 40%; /* 48% pentru a permite spațiu între div-uri */
+    margin: 0 0 10px 0; /* Spațiu între rânduri */
+  }
+}
+@media (max-width: 300px) {
+  .div-flex > div {
+    flex-basis: 100%;
+    margin: 0 0 10px 0; /* Spațiu între rânduri */
+  }
+}
